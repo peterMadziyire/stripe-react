@@ -1,0 +1,28 @@
+{
+  "name": "stripe-react",
+  "version": "1.0.0",
+  "description": "accepting payments",
+  "main": "index.js",
+  "engines": {
+    "node": "v16.13.1",
+    "npm": "8.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "stripe": "^9.13.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
