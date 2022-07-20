@@ -13,7 +13,7 @@ const App = ()=> {
 const createCheckoutSession = async (e) =>{
   e.preventDefault();
 
-  const stripe = await loadStripe('pk_live_kqoH2btmzTnHl21uezoswcKW');
+  const stripe = await loadStripe('pk_test_RtoxE59B9a8VsJbYkY733GEG');
 
   return fetch('/create-checkout-session', {
     method: 'POST',

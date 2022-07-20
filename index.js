@@ -4,12 +4,12 @@ const cors= require('cors');
 const path= require('path');
 require('dotenv').config();
 const port= process.env.PORT||5001;
-const stripe = require('stripe')(process.env.STRIPE_SK);
+const stripe = require('stripe')(process.env.STRIPE_SK)
 
 
 //middleware
 app.use(cors());
-app.use(express.json())
+app.use(express.json());
 
 app.use(express.static(path.join(__dirname, 'client/build')));
 
